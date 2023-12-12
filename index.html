@@ -10,13 +10,180 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!-- Link Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
     <!-- Link CSS Style -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <header class="container-fluid bg-dark">
+        <nav
+            class="container-md text-white text-uppercase fw-bolder d-flex flex-row align-items-center justify-content-between py-3">
+            <span class="fs-4">start bootstrap</span>
+            <i class="bi bi-list d-md-none text-secondary border border-white rounded-1 fs-1 text px-2"></i>
+            <ul class="d-none d-md-flex flex-row gap-4 list-unstyled">
+                <li>
+                    <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        href="">portfolio</a>
+                </li>
+                <li>
+                    <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        href="">about</a>
+                </li>
+                <li>
+                    <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        href="">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section class="bg-success text-white text-uppercase">
+            <div class="container d-flex flex-column align-items-center">
+                <figure class="col-8 col-md-4 col-xxl-3 pt-5">
+                    <img class="img-fluid" src="./assets/img/avatar.svg" alt="">
+                </figure>
+                <span class="fs-1 fw-bolder">start bootstrap</span>
+                <i class="bi bi-star-fill"></i>
+                <ul class="d-flex flex-row gap-2 list-unstyled py-3">
+                    <li>
+                        <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="">graphic artist</a>
+                    </li>
+                    <li>-</li>
+                    <li>
+                        <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="">web designer</a>
+                    </li>
+                    <li>-</li>
+                    <li>
+                        <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="">illustrator</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
+        <section class="container-lg fw-bolder text-uppercase text-center d-flex flex-column align-items-center my-5">
+            <span class="fs-1">portfolio</span>
+            <i class="bi bi-star-fill"></i>
+            <div class="container-fluid">
+                <div class="row">
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <img class="img-fluid rounded-2" src="./assets/img/cabin.png" alt="">
+                    </figure>
+
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <img class="img-fluid rounded-2" src="./assets/img/cake.png" alt="">
+                    </figure>
+
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <img class="img-fluid rounded-2" src="./assets/img/circus.png" alt="">
+                    </figure>
+
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <img class="img-fluid rounded-2" src="./assets/img/game.png" alt="">
+                    </figure>
+
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <img class="img-fluid rounded-2" src="./assets/img/safe.png" alt="">
+                    </figure>
+
+                    <figure class="col-sm-12 col-md-6 col-lg-4">
+                        <img class="img-fluid rounded-2" src="./assets/img/submarine.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-success">
+            <div class="container-fluid text-white fw-bolder d-flex flex-column align-items-center p-5">
+                <span class="fs-1 text-uppercase text-center">about</span>
+                <i class="bi bi-star-fill"></i>
+                <div class="container-lg text-start d-md-flex flex-row">
+                    <div class="col-lg-1"></div>
+                    <p class="fw-normal col-lg-5 px-2">
+                        Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
+                        complete
+                        source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy
+                        customization.
+                    </p>
+                    <p class="fw-normal col-lg-5 px-2">
+                        Whether you're a student looking to showcase your work, a professional looking to attract
+                        clients,
+                        or a
+                        graphic artist looking to share your projects, this template is the perfect starting point!
+                    </p>
+                    <div class="col-lg-1"></div>
+                </div>
+                <button type="button" class="btn btn-outline-light"><i class="bi bi-download"></i> Download</button>
+            </div>
+        </section>
+
+        <section>
+            <div class="container d-flex flex-column align-items-center py-5">
+                <span class="fs-1 text-uppercase text-center fw-bolder">CONTACT ME</span>
+                <i class="bi bi-star-fill"></i>
+                <form action="/action_page.php" class="row row-gap-3">
+
+                    <div class="col-lg-3 col-2 py-2"></div>
+                    <label for="fname" class="col-lg-2 col-2 py-2 border-bottom">Name</label>
+                    <input type="text" id="name" name="name" class="col-lg-4 col-6 py-2 border border-0 border-bottom">
+                    <div class="col-lg-3 col-2 py-2"></div>
+
+                    <div class="col-lg-3 col-2 py-2"></div>
+                    <label for="lname" class="col-lg-2 col-2 py-2 border-bottom">Email Address</label>
+                    <input type="email" id="email" name="email"
+                        class="col-lg-4 col-6 py-2 border border-0 border-bottom">
+                    <div class="col-lg-3 col-2 py-2"></div>
+
+                    <div class="col-lg-3 col-2 py-2"></div>
+                    <label for="lname" class="col-lg-2 col-2 py-2 border-bottom">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="col-lg-4 col-6 py-2 border border-0 border-bottom">
+                    <div class="col-lg-3 col-2 py-2"></div>
+
+                    <div class="col-lg-3 col-2"></div>
+                    <textarea name="message" form="message" placeholder="Message"
+                        class="col-lg-6 col-8 border border-0 border-bottom"></textarea>
+                    <div class="col-lg-3 col-2"></div>
+
+                    <div class="col-lg-3 col-2"></div>
+                    <button type="button" class="btn btn-success col-lg-1  col-2">Send</button>
+                    <div class="col-lg-8 col-8"></div>
+                </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center">
+        <div class="container-lg d-md-flex flex-row align-items-center pt-4 pb-md-4">
+            <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+                <span class="fs-4 text-uppercase">location</span>
+                <span>2215 John Daniel Drive Clark, MO 54243</span>
+            </div>
+
+            <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+                <span class="fs-4 text-uppercase">around the web</span>
+                <div class="d-flex flex-row align-items-center gap-4">
+                    <i class="bi bi-facebook border rounded-circle ratio ratio-1x1 p-4"></i>
+                    <i class="bi bi-google border rounded-circle ratio ratio-1x1 p-4"></i>
+                    <i class="bi bi-twitter border rounded-circle ratio ratio-1x1 p-4"></i>
+                    <i class="bi bi-linkedin border rounded-circle ratio ratio-1x1 p-4"></i>
+                </div>
+            </div>
+
+            <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+                <span class="fs-4 text-uppercase">about freelancer</span>
+                <span>Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.</span>
+            </div>
+        </div>
+
+        <div class="py-3">
+            <span>Copyright © Your Website 2019</span>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
