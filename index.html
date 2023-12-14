@@ -11,14 +11,14 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- Link Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
     <!-- Link CSS Style -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <header class="container-fluid bg-dark">
+    <header>
         <nav
             class="container-md text-white text-uppercase fw-bolder d-flex flex-row align-items-center justify-content-between py-3">
             <span class="fs-4">start bootstrap</span>
@@ -38,16 +38,18 @@
                 </li>
             </ul>
         </nav>
-    </header>
 
-    <main>
-        <section class="bg-success text-white text-uppercase">
-            <div class="container d-flex flex-column align-items-center">
-                <figure class="col-8 col-md-4 col-xxl-3 pt-5">
+        <div>
+            <div class="container d-flex flex-column align-items-center text-white text-uppercase">
+                <figure class="col-6 col-md-4 col-lg-3">
                     <img class="img-fluid" src="./assets/img/avatar.svg" alt="">
                 </figure>
                 <span class="fs-1 fw-bolder">start bootstrap</span>
-                <i class="bi bi-star-fill"></i>
+                <div class="container-fluid d-flex flex-row justify-content-center align-items-center gap-1 gap-lg-2">
+                    <div class="star-lateral-light"></div>
+                    <i class="bi bi-star-fill"></i>
+                    <div class="star-lateral-light"></div>
+                </div>
                 <ul class="d-flex flex-row gap-2 list-unstyled py-3">
                     <li>
                         <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
@@ -65,13 +67,19 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </div>
+    </header>
 
-        <section class="container-lg fw-bolder text-uppercase text-center d-flex flex-column align-items-center my-5">
+    <main>
+        <section class="container-lg fw-bolder text-uppercase text-center d-flex flex-column align-items-center my-4">
             <span class="fs-1">portfolio</span>
-            <i class="bi bi-star-fill"></i>
+            <div class="container-fluid d-flex flex-row justify-content-center align-items-center gap-1 gap-lg-2">
+                <div class="star-lateral-dark"></div>
+                <i class="bi bi-star-fill"></i>
+                <div class="star-lateral-dark"></div>
+            </div>
             <div class="container-fluid">
-                <div class="row">
+                <div class="row mt-3">
                     <figure class="col-sm-12 col-md-6 col-lg-4">
                         <img class="img-fluid rounded-2" src="./assets/img/cabin.png" alt="">
                     </figure>
@@ -99,65 +107,57 @@
             </div>
         </section>
 
-        <section class="bg-success">
+        <section>
             <div class="container-fluid text-white fw-bolder d-flex flex-column align-items-center p-5">
                 <span class="fs-1 text-uppercase text-center">about</span>
-                <i class="bi bi-star-fill"></i>
-                <div class="container-lg text-start d-md-flex flex-row">
-                    <div class="col-lg-1"></div>
-                    <p class="fw-normal col-lg-5 px-2">
+                <div class="container-fluid d-flex flex-row justify-content-center align-items-center gap-1 gap-lg-2">
+                    <div class="star-lateral-light"></div>
+                    <i class="bi bi-star-fill"></i>
+                    <div class="star-lateral-light"></div>
+                </div>
+                <div class="w-75 text-start d-md-flex flex-row justify-content-between gap-4 my-2">
+                    <p class="fw-normal col-md-6">
                         Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
                         complete
                         source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy
                         customization.
                     </p>
-                    <p class="fw-normal col-lg-5 px-2">
+                    <p class="fw-normal col-md-6">
                         Whether you're a student looking to showcase your work, a professional looking to attract
                         clients,
                         or a
                         graphic artist looking to share your projects, this template is the perfect starting point!
                     </p>
-                    <div class="col-lg-1"></div>
                 </div>
                 <button type="button" class="btn btn-outline-light"><i class="bi bi-download"></i> Download</button>
             </div>
         </section>
 
-        <section>
-            <div class="container d-flex flex-column align-items-center py-5">
+        <section class="container">
+            <div class="d-flex flex-column align-items-center py-5">
                 <span class="fs-1 text-uppercase text-center fw-bolder">CONTACT ME</span>
-                <i class="bi bi-star-fill"></i>
-                <form action="/action_page.php" class="row row-gap-3">
-
-                    <div class="col-lg-3 col-2 py-2"></div>
-                    <label for="fname" class="col-lg-2 col-2 py-2 border-bottom">Name</label>
-                    <input type="text" id="name" name="name" class="col-lg-4 col-6 py-2 border border-0 border-bottom">
-                    <div class="col-lg-3 col-2 py-2"></div>
-
-                    <div class="col-lg-3 col-2 py-2"></div>
-                    <label for="lname" class="col-lg-2 col-2 py-2 border-bottom">Email Address</label>
-                    <input type="email" id="email" name="email"
-                        class="col-lg-4 col-6 py-2 border border-0 border-bottom">
-                    <div class="col-lg-3 col-2 py-2"></div>
-
-                    <div class="col-lg-3 col-2 py-2"></div>
-                    <label for="lname" class="col-lg-2 col-2 py-2 border-bottom">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" class="col-lg-4 col-6 py-2 border border-0 border-bottom">
-                    <div class="col-lg-3 col-2 py-2"></div>
-
-                    <div class="col-lg-3 col-2"></div>
-                    <textarea name="message" form="message" placeholder="Message"
-                        class="col-lg-6 col-8 border border-0 border-bottom"></textarea>
-                    <div class="col-lg-3 col-2"></div>
-
-                    <div class="col-lg-3 col-2"></div>
-                    <button type="button" class="btn btn-success col-lg-1  col-2">Send</button>
-                    <div class="col-lg-8 col-8"></div>
-                </form>
+                <div class="container-fluid d-flex flex-row justify-content-center align-items-center gap-1 gap-lg-2">
+                    <div class="star-lateral-dark"></div>
+                    <i class="bi bi-star-fill"></i>
+                    <div class="star-lateral-dark"></div>
+                </div>
+                <div class="container">
+                    <form action="/action_page.php" class="w-75 my-3 mx-auto">
+                        <input type="text" id="name" name="name" placeholder="Name"
+                            class="col-12 border border-0 border-bottom mt-3 pb-1">
+                        <input type="email" id="email" name="email" placeholder="Email address"
+                            class="col-12 border border-0 border-bottom mt-3 pb-1">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone number"
+                            class="col-12 border border-0 border-bottom mt-3 pb-1">
+                        <textarea name=" message" form="message" placeholder="Message" rows="4" cols="50"
+                            class="col-12 border border-0 border-bottom mt-3 pb-1"></textarea>
+                        <button type="button" class="btn btn-success d-block mt-3">Send</button>
+                    </form>
+                </div>
         </section>
     </main>
 
-    <footer class="bg-dark text-white text-center">
+    <footer class="text-white text-center">
         <div class="container-lg d-md-flex flex-row align-items-center pt-4 pb-md-4">
             <div class="col-md-4 d-flex flex-column align-items-center mb-4">
                 <span class="fs-4 text-uppercase">location</span>
@@ -167,16 +167,18 @@
             <div class="col-md-4 d-flex flex-column align-items-center mb-4">
                 <span class="fs-4 text-uppercase">around the web</span>
                 <div class="d-flex flex-row align-items-center gap-4">
-                    <i class="bi bi-facebook border rounded-circle ratio ratio-1x1 p-4"></i>
-                    <i class="bi bi-google border rounded-circle ratio ratio-1x1 p-4"></i>
-                    <i class="bi bi-twitter border rounded-circle ratio ratio-1x1 p-4"></i>
-                    <i class="bi bi-linkedin border rounded-circle ratio ratio-1x1 p-4"></i>
+                    <i class="bi bi-facebook border rounded-circle px-2 py-1"></i>
+                    <i class="bi bi-google border rounded-circle px-2 py-1"></i>
+                    <i class="bi bi-twitter border rounded-circle px-2 py-1"></i>
+                    <i class="bi bi-linkedin border rounded-circle px-2 py-1"></i>
                 </div>
             </div>
 
             <div class="col-md-4 d-flex flex-column align-items-center mb-4">
                 <span class="fs-4 text-uppercase">about freelancer</span>
-                <span>Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.</span>
+                <span>
+                    Freelance is a free to use, open source Bootstrap theme created by <a href="">Start Bootstrap</a>.
+                </span>
             </div>
         </div>
 
