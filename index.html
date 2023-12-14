@@ -19,10 +19,10 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav data-bs-theme="dark" class="navbar navbar-expand-lg fixed-top">
             <div class="container text-white text-uppercase d-flex flex-row justify-content-between">
-                <a class="navbar-brand fs-4 fw-bolder text-white" href="#">start bootstrap</a>
-                <button class="navbar-toggler border-dark-subtle" type="button" data-bs-toggle="collapse"
+                <a class="navbar-brand fs-4 fw-bolder" href="#">start bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-list text-secondary fs-4"></i>
@@ -30,35 +30,35 @@
                 <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse justify-content-end"
                     id="navbarSupportedContent">
                     <li class="nav-item">
-                        <a class="nav-link link-light fw-bolder" href="#portfolio">portfolio</a>
+                        <a class="nav-link fw-bolder" href="#portfolio">portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-light fw-bolder" href="#about">about</a>
+                        <a class="nav-link fw-bolder" href="#about">about</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-light fw-bolder" href="#contact">contact</a>
+                        <a class="nav-link fw-bolder" href="#contact">contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
         <div>
-            <div class="container d-flex flex-column align-items-center text-white text-uppercase pt-5 pb-2">
+            <div class="container d-flex flex-column align-items-center text-uppercase pt-5 pb-2">
                 <figure class="col-6 col-md-4 col-lg-3">
                     <img class="img-fluid" src="./assets/img/avatar.svg" alt="">
                 </figure>
-                <h1 class="fw-bolder">start bootstrap</h1>
+                <h1 class="fw-bolder text-white">start bootstrap</h1>
                 <div class="container-fluid d-flex flex-row justify-content-center align-items-center gap-1 gap-lg-2">
                     <div class="star-lateral-light"></div>
-                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill text-white"></i>
                     <div class="star-lateral-light"></div>
                 </div>
                 <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item bg-transparent fw-bolder text-white border-0 px-2">graphic artist</li>
-                    <li class="list-group-item bg-transparent fw-bolder text-white border-0 px-0">-</li>
-                    <li class="list-group-item bg-transparent fw-bolder text-white border-0 px-2">web designer</li>
-                    <li class="list-group-item bg-transparent fw-bolder text-white border-0 px-0">-</li>
-                    <li class="list-group-item bg-transparent fw-bolder text-white border-0 px-2">illustrator</li>
+                    <li class="list-group-item bg-transparent text-white fw-bolder border-0 px-2">graphic artist</li>
+                    <li class="list-group-item bg-transparent text-white fw-bolder border-0 px-0">-</li>
+                    <li class="list-group-item bg-transparent text-white fw-bolder border-0 px-2">web designer</li>
+                    <li class="list-group-item bg-transparent text-white fw-bolder border-0 px-0">-</li>
+                    <li class="list-group-item bg-transparent text-white fw-bolder border-0 px-2">illustrator</li>
                 </ul>
             </div>
         </div>
@@ -111,13 +111,13 @@
                     <div class="star-lateral-light"></div>
                 </div>
                 <div class="w-75 text-start d-md-flex flex-row justify-content-between gap-4 my-2">
-                    <p class="col-md-6">
+                    <p class=" col-md-6">
                         Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
                         complete
                         source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy
                         customization.
                     </p>
-                    <p class="col-md-6">
+                    <p class=" col-md-6">
                         Whether you're a student looking to showcase your work, a professional looking to attract
                         clients,
                         or a
@@ -137,16 +137,17 @@
                     <div class="star-lateral-dark"></div>
                 </div>
                 <div class="container">
-                    <form action="/action_page.php" class="w-75 my-3 mx-auto">
-                        <input type="text" id="name" name="name" placeholder="Name"
-                            class="col-12 border border-0 border-bottom mt-3 pb-1">
-                        <input type="email" id="email" name="email" placeholder="Email address"
-                            class="col-12 border border-0 border-bottom mt-3 pb-1">
-                        <input type="tel" id="phone" name="phone" placeholder="Phone number"
-                            class="col-12 border border-0 border-bottom mt-3 pb-1">
+                    <form action="/thank-you.html" method="get"
+                        class="w-75 my-3 mx-auto d-flex flex-column align-items-start gap-3">
+                        <input type="text" id="name" name="name" placeholder="Name" required
+                            class="col-12 border border-0 border-bottom pb-1">
+                        <input type="email" id="email" name="email" placeholder="Email address" required
+                            class="col-12 border border-0 border-bottom pb-1">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone number" required
+                            class="col-12 border border-0 border-bottom pb-1">
                         <textarea name=" message" form="message" placeholder="Message" rows="4" cols="50"
-                            class="col-12 border border-0 border-bottom mt-3 pb-1"></textarea>
-                        <button type="button" class="btn btn-success d-block mt-3">Send</button>
+                            class="col-12 border border-0 border-bottom pb-1"></textarea>
+                        <button type="submit" class="btn btn-success">Send</button>
                     </form>
                 </div>
         </section>
@@ -155,22 +156,22 @@
     <footer class="text-white text-center">
         <div class="container-lg d-md-flex flex-row align-items-center pt-4 pb-md-4">
             <div class="col-md-4 d-flex flex-column align-items-center mb-4">
-                <span class="fs-4 text-uppercase">location</span>
+                <h4 class="text-uppercase">location</h4>
                 <span>2215 John Daniel Drive Clark, MO 54243</span>
             </div>
 
             <div class="col-md-4 d-flex flex-column align-items-center mb-4">
-                <span class="fs-4 text-uppercase">around the web</span>
+                <h4 class="text-uppercase">around the web</h4>
                 <div class="d-flex flex-row align-items-center gap-4">
                     <i class="bi bi-facebook border rounded-circle px-2 py-1"></i>
                     <i class="bi bi-google border rounded-circle px-2 py-1"></i>
-                    <i class="bi bi-twitter border rounded-circle px-2 py-1"></i>
+                    <i class="bi bi-twitter-x border rounded-circle px-2 py-1"></i>
                     <i class="bi bi-linkedin border rounded-circle px-2 py-1"></i>
                 </div>
             </div>
 
             <div class="col-md-4 d-flex flex-column align-items-center mb-4">
-                <span class="fs-4 text-uppercase">about freelancer</span>
+                <h4 class="text-uppercase">about freelancer</h4>
                 <span>
                     Freelance is a free to use, open source Bootstrap theme created by <a href="">Start Bootstrap</a>.
                 </span>
